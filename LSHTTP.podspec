@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "LSHTTP"
-  s.version      = “2.0.0”
+  s.version      = "2.0.0"
   s.summary      = ""
 
   s.description  = <<-DESC
