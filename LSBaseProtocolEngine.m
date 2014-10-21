@@ -43,7 +43,7 @@ static id<LSProtocolErrorParser> sErrorParser = nil;
 {
     self.curRequest = nil;
     self.errorParser = nil;
-    [super dealloc];
+    
 }
 
 - (void)sendRequest
@@ -115,7 +115,7 @@ static id<LSProtocolErrorParser> sErrorParser = nil;
 
 - (LSBaseResponseData*)parseResponseData:(NSString*)aResponseString
 {
-    return [[[LSBaseResponseData alloc] init] autorelease];
+    return [[LSBaseResponseData alloc] init] ;
 }
 
 - (BOOL)handleResponseData:(LSBaseResponseData*)aNewData

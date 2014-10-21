@@ -29,7 +29,7 @@ static LSHTTPKit* _sHTTPKit;
 {
     [_reqQueue cancelAllOperations];
     
-    [super dealloc];
+    
 }
 
 - (LSHTTPRequestID)addRequest:(ASIHTTPRequest*)aRequest

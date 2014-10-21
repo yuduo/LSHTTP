@@ -11,7 +11,7 @@
 @implementation LSHTTPImageKit
 + (LSHTTPImageKit*)imageKit
 {
-    LSHTTPImageKit* kit = [[[LSHTTPImageKit alloc] init] autorelease];
+    LSHTTPImageKit* kit = [[LSHTTPImageKit alloc] init] ;
     return kit;
 }
 
@@ -19,7 +19,7 @@
 {
     [_dictImageURLAndDelegate release];
     [_downloadCache release];
-    [super dealloc];
+    
 }
 
 - (id)init
@@ -58,7 +58,7 @@
        return -1;
     }
     
-    LSHTTPRequest* request =  [[[LSHTTPRequest alloc] initWithURL:url] autorelease];
+    LSHTTPRequest* request =  [[LSHTTPRequest alloc] initWithURL:url] ;
     request.delegate = self;
     request.downloadCache = _downloadCache;
     if (aUseCache)
